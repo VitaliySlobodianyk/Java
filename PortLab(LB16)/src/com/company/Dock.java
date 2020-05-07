@@ -31,6 +31,4 @@ public class Dock extends Thread {
     public synchronized boolean bookDock(){
      return lock.tryLock();
     }
-
-
 }

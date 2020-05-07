@@ -39,6 +39,7 @@ public class Ship  extends  Thread{
                 System.out.println( name + " has got dock " + dockForUnload.name);
                 dockForUnload.Unload(this);
                 System.out.println( name + " has completed unload in " + dockForUnload.name);
+                port.allUnloaded.countDown();
             }
     }
 
